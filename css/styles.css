@@ -248,7 +248,7 @@ p { margin-bottom: 1rem; }
   justify-content: center;
   text-align: center;
   background-image:
-    linear-gradient(rgba(10, 10, 10, 0.68), rgba(10, 10, 10, 0.76)),
+    linear-gradient(rgba(10, 10, 10, 0.82), rgba(10, 10, 10, 0.88)),
     url('../images/IMG_2032.jpg');
   background-size: cover;
   background-position: center center;
