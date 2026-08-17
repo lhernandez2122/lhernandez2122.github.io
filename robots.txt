@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.legendarymetalworks.com/sitemap.xml
+Sitemap: https://legendarymetalworks.com/sitemap.xml
+
+# AI context file
+# https://legendarymetalworks.com/llms.txt
