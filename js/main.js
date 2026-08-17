@@ -46,6 +46,46 @@ document.addEventListener('DOMContentLoaded', () => {
 
   fadeElements.forEach(el => observer.observe(el));
 
+  // --- Lead Tracking ---------------------------------------------------
+  // Fires a GA4 event when a real lead happens. GA4 is configured in each
+  // page's <head>; these events are what Google Ads imports as conversions.
+  // Without them the Ads account records zero conversions no matter how many
+  // leads actually come in.
+  //
+  // Guarded so a blocked or slow-loading gtag can never break form submission
+  // or stop a phone call from dialling.
+  function trackLead(eventName, label) {
+    try {
+      if (typeof gtag === 'function') {
+        gtag('event', eventName, {
+          event_category: 'lead',
+          event_label: label,
+          value: 1
+        });
+      }
+    } catch (err) {
+      // Tracking must never interfere with the user completing an action.
+    }
+  }
+
+  // Phone taps are the main way customers reach a metal fabrication shop,
+  // so they need to be counted alongside form fills.
+  document.querySelectorAll('a[href^="tel:"]').forEach(link => {
+    link.addEventListener('click', () => {
+      trackLead('phone_click', 'Phone Tap - ' + (document.title || location.pathname));
+    });
+  });
+
+  // The homepage lead form posts natively to a different provider
+  // (formsubmit.co) rather than going through the fetch handlers below, so it
+  // needs its own listener. GA4 sends via sendBeacon, which survives the
+  // page unload that follows a native form POST.
+  document.querySelectorAll('form.lead-form').forEach(form => {
+    form.addEventListener('submit', () => {
+      trackLead('contact_form', 'Homepage Lead Form');
+    });
+  });
+
   // --- Contact Form ---
   const contactForm = document.getElementById('contactForm');
   if (contactForm) {
@@ -78,6 +118,7 @@ document.addEventListener('DOMContentLoaded', () => {
       .then(res => res.json())
       .then(result => {
         if (result.success) {
+          trackLead('contact_form', 'Contact Form');
           const successMsg = document.getElementById('contactSuccess');
           if (successMsg) {
             successMsg.classList.add('show');
@@ -126,6 +167,7 @@ document.addEventListener('DOMContentLoaded', () => {
       .then(res => res.json())
       .then(result => {
         if (result.success) {
+          trackLead('booking_form', 'Consultation Booking');
           const successMsg = document.getElementById('bookingSuccess');
           if (successMsg) {
             successMsg.classList.add('show');
