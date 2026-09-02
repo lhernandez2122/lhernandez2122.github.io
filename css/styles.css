@@ -1304,3 +1304,97 @@ p { margin-bottom: 1rem; }
   .mobile-call-sticky { display: block; }
   body { padding-bottom: 84px; }
 }
+
+/* --- Quick Quote band (service pages + homepage) ------------------------
+   A two-field name + phone form placed high on the page. The full lead form
+   on the homepage sits 83% of the way down; on a phone that is a very long
+   scroll for someone who just wants a price. This catches them early. */
+.quote-band {
+  background: linear-gradient(135deg, var(--green-dark, #1f4d20) 0%, var(--green, #2d6a2e) 100%);
+  padding: 40px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+.quote-band-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+.quote-band-copy { flex: 1 1 300px; }
+.quote-band-copy h2 {
+  font-family: var(--font-heading, 'Oswald', sans-serif);
+  font-size: 1.6rem;
+  line-height: 1.2;
+  margin: 0 0 8px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.quote-band-copy p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.85);
+}
+.quote-band-copy .quote-band-call {
+  display: inline-block;
+  margin-top: 10px;
+  font-family: var(--font-heading, 'Oswald', sans-serif);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #fff;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.45);
+}
+.quote-band-copy .quote-band-call:hover { border-bottom-color: #fff; color: #fff; }
+.quote-form {
+  flex: 1 1 380px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.quote-form input[type="text"],
+.quote-form input[type="tel"] {
+  width: 100%;
+  padding: 14px 16px;
+  font-family: var(--font-body, 'Open Sans', sans-serif);
+  font-size: 0.95rem;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 6px;
+  background: #fff;
+  color: #222;
+  box-sizing: border-box;
+}
+.quote-form input:focus {
+  outline: none;
+  border-color: #fff;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.25);
+}
+.quote-form button {
+  grid-column: 1 / -1;
+  width: 100%;
+  padding: 15px 20px;
+  font-family: var(--font-heading, 'Oswald', sans-serif);
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--green-dark, #1f4d20);
+  background: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background var(--transition, 0.3s ease), transform 0.15s ease;
+}
+.quote-form button:hover { background: #f0f0f0; transform: translateY(-1px); }
+.quote-form .quote-note {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-size: 0.78rem;
+  color: rgba(255, 255, 255, 0.75);
+  text-align: center;
+}
+.quote-hp { position: absolute; left: -9999px; opacity: 0; }
+@media (max-width: 900px) {
+  .quote-band-inner { flex-direction: column; align-items: stretch; text-align: center; }
+  .quote-form { grid-template-columns: 1fr; }
+}
