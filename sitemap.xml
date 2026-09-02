@@ -2,219 +2,299 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://legendarymetalworks.com/</loc>
-    <lastmod>2026-08-15</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://legendarymetalworks.com/services.html</loc>
-    <lastmod>2026-08-15</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://legendarymetalworks.com/driveway-gates.html</loc>
-    <lastmod>2026-08-15</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://legendarymetalworks.com/side-gates.html</loc>
-    <lastmod>2026-08-15</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://legendarymetalworks.com/metal-fencing.html</loc>
-    <lastmod>2026-08-15</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://legendarymetalworks.com/railings.html</loc>
-    <lastmod>2026-08-15</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://legendarymetalworks.com/metal-front-doors.html</loc>
-    <lastmod>2026-08-15</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://legendarymetalworks.com/glass-railings.html</loc>
-    <lastmod>2026-08-15</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://legendarymetalworks.com/about.html</loc>
-    <lastmod>2026-08-15</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://legendarymetalworks.com/gallery.html</loc>
-    <lastmod>2026-08-15</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://legendarymetalworks.com/contact.html</loc>
-    <lastmod>2026-08-15</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://legendarymetalworks.com/booking.html</loc>
-    <lastmod>2026-08-15</lastmod>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- Service + City Pages -->
+  <url>
+    <loc>https://legendarymetalworks.com/driveway-gates-thousand-oaks.html</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://legendarymetalworks.com/driveway-gates-westlake-village.html</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://legendarymetalworks.com/driveway-gates-camarillo.html</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://legendarymetalworks.com/driveway-gates-simi-valley.html</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://legendarymetalworks.com/driveway-gates-calabasas.html</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://legendarymetalworks.com/driveway-gates-malibu.html</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://legendarymetalworks.com/iron-railings-thousand-oaks.html</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://legendarymetalworks.com/glass-railings-malibu.html</loc>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <!-- Blog -->
   <url>
     <loc>https://legendarymetalworks.com/blog/</loc>
-    <lastmod>2026-08-15</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://legendarymetalworks.com/blog/motorized-driveway-gate-guide.html</loc>
-    <lastmod>2026-08-15</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://legendarymetalworks.com/blog/best-metal-fabrication-near-me.html</loc>
-    <lastmod>2026-08-15</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://legendarymetalworks.com/blog/metal-upgrades-curb-appeal.html</loc>
-    <lastmod>2026-08-15</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://legendarymetalworks.com/blog/wrought-iron-fence-cost.html</loc>
-    <lastmod>2026-08-15</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://legendarymetalworks.com/blog/iron-railing-vs-cable-railing.html</loc>
-    <lastmod>2026-08-15</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://legendarymetalworks.com/blog/repair-or-replace-driveway-gate.html</loc>
-    <lastmod>2026-08-15</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://legendarymetalworks.com/blog/glass-railing-cost-ventura-county.html</loc>
-    <lastmod>2026-08-15</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://legendarymetalworks.com/blog/sliding-vs-swing-driveway-gates.html</loc>
-    <lastmod>2026-08-15</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://legendarymetalworks.com/blog/interior-safety-guardrails-pony-walls-stairwells.html</loc>
-    <lastmod>2026-08-15</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://legendarymetalworks.com/blog/pool-fence-requirements-california.html</loc>
-    <lastmod>2026-08-15</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://legendarymetalworks.com/blog/best-driveway-gate-materials.html</loc>
-    <lastmod>2026-08-15</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://legendarymetalworks.com/blog/metal-front-door-vs-wood.html</loc>
-    <lastmod>2026-08-15</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://legendarymetalworks.com/blog/custom-side-gates-guide.html</loc>
-    <lastmod>2026-08-15</lastmod>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://legendarymetalworks.com/blog/driveway-gate-cost-ventura-county.html</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://legendarymetalworks.com/blog/automatic-gate-not-opening.html</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://legendarymetalworks.com/blog/iron-stair-railing-cost.html</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://legendarymetalworks.com/blog/how-long-custom-driveway-gate-takes.html</loc>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <!-- Location Pages -->
   <url>
+    <loc>https://legendarymetalworks.com/locations/</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
     <loc>https://legendarymetalworks.com/locations/ventura.html</loc>
-    <lastmod>2026-08-15</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://legendarymetalworks.com/locations/oxnard.html</loc>
-    <lastmod>2026-08-15</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://legendarymetalworks.com/locations/thousand-oaks.html</loc>
-    <lastmod>2026-08-15</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://legendarymetalworks.com/locations/camarillo.html</loc>
-    <lastmod>2026-08-15</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://legendarymetalworks.com/locations/simi-valley.html</loc>
-    <lastmod>2026-08-15</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://legendarymetalworks.com/locations/moorpark.html</loc>
-    <lastmod>2026-08-15</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://legendarymetalworks.com/locations/westlake-village.html</loc>
-    <lastmod>2026-08-15</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://legendarymetalworks.com/locations/ojai.html</loc>
-    <lastmod>2026-08-15</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://legendarymetalworks.com/locations/calabasas.html</loc>
-    <lastmod>2026-08-15</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://legendarymetalworks.com/locations/malibu.html</loc>
-    <lastmod>2026-08-15</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
