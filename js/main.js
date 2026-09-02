@@ -76,13 +76,14 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // The homepage lead form posts natively to a different provider
-  // (formsubmit.co) rather than going through the fetch handlers below, so it
-  // needs its own listener. GA4 sends via sendBeacon, which survives the
-  // page unload that follows a native form POST.
-  document.querySelectorAll('form.lead-form').forEach(form => {
+  // The homepage lead form and the short quote forms on the service pages post
+  // natively rather than going through the fetch handlers below, so they need
+  // their own listener. GA4 sends via sendBeacon, which survives the page
+  // unload that follows a native form POST.
+  document.querySelectorAll('form.lead-form, form.quote-form').forEach(form => {
     form.addEventListener('submit', () => {
-      trackLead('contact_form', 'Homepage Lead Form');
+      const label = form.getAttribute('data-lead-label') || (document.title || location.pathname);
+      trackLead('contact_form', label);
     });
   });
 
@@ -95,13 +96,14 @@ document.addEventListener('DOMContentLoaded', () => {
       const formData = new FormData(contactForm);
       const data = Object.fromEntries(formData.entries());
 
-      // Basic validation
-      if (!data.name || !data.email || !data.phone || !data.message) {
-        alert('Please fill in all required fields.');
+      // Basic validation. Name and phone are all we need to call someone back —
+      // every extra required field costs leads.
+      if (!data.name || !data.phone) {
+        alert('Please enter your name and phone number.');
         return;
       }
 
-      if (!isValidEmail(data.email)) {
+      if (data.email && !isValidEmail(data.email)) {
         alert('Please enter a valid email address.');
         return;
       }
@@ -119,12 +121,12 @@ document.addEventListener('DOMContentLoaded', () => {
       .then(result => {
         if (result.success) {
           trackLead('contact_form', 'Contact Form');
-          const successMsg = document.getElementById('contactSuccess');
-          if (successMsg) {
-            successMsg.classList.add('show');
-            contactForm.reset();
-            setTimeout(() => { successMsg.classList.remove('show'); }, 5000);
-          }
+          // Send the visitor to the thank-you page. That page URL is what
+          // Google Ads counts as a conversion, so the redirect is not
+          // cosmetic — without it the lead is invisible to the ad account.
+          contactForm.reset();
+          window.location.href = '/thank-you.html';
+          return;
         } else {
           alert('Something went wrong. Please call us at (805) 396-9984.');
         }
@@ -168,16 +170,9 @@ document.addEventListener('DOMContentLoaded', () => {
       .then(result => {
         if (result.success) {
           trackLead('booking_form', 'Consultation Booking');
-          const successMsg = document.getElementById('bookingSuccess');
-          if (successMsg) {
-            successMsg.classList.add('show');
-            bookingForm.reset();
-            document.querySelectorAll('.calendar-day.selected').forEach(d => d.classList.remove('selected'));
-            document.querySelectorAll('.time-slot.selected').forEach(t => t.classList.remove('selected'));
-            document.getElementById('selectedDate').value = '';
-            document.getElementById('selectedTime').value = '';
-            setTimeout(() => { successMsg.classList.remove('show'); }, 5000);
-          }
+          bookingForm.reset();
+          window.location.href = '/thank-you.html';
+          return;
         } else {
           alert('Something went wrong. Please call us at (805) 396-9984.');
         }
